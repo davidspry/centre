@@ -7,19 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14B23A3229756D76003DD54A /* UserDefaultsExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B23A3129756D76003DD54A /* UserDefaultsExt.swift */; };
+		14CE90092970357100ED0323 /* NSSoundExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE90082970357100ED0323 /* NSSoundExt.swift */; };
+		14CE900B2970403300ED0323 /* LaunchOnLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE900A2970403300ED0323 /* LaunchOnLogin.swift */; };
 		14F32C2F295FBA0700EC1916 /* CentreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F32C2E295FBA0700EC1916 /* CentreApp.swift */; };
-		14F32C31295FBA0700EC1916 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F32C30295FBA0700EC1916 /* ContentView.swift */; };
 		14F32C33295FBA0800EC1916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F32C32295FBA0800EC1916 /* Assets.xcassets */; };
 		14F32C36295FBA0800EC1916 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F32C35295FBA0800EC1916 /* Preview Assets.xcassets */; };
+		14F32C3F295FBDCF00EC1916 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = 14F32C3E295FBDCF00EC1916 /* HotKey */; };
+		14F32C41295FBEA600EC1916 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F32C40295FBEA600EC1916 /* WindowController.swift */; };
+		14F32C43295FE11A00EC1916 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F32C42295FE11A00EC1916 /* AlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14B23A3129756D76003DD54A /* UserDefaultsExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExt.swift; sourceTree = "<group>"; };
+		14CE90082970357100ED0323 /* NSSoundExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSSoundExt.swift; sourceTree = "<group>"; };
+		14CE900A2970403300ED0323 /* LaunchOnLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchOnLogin.swift; sourceTree = "<group>"; };
 		14F32C2B295FBA0700EC1916 /* Centre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Centre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F32C2E295FBA0700EC1916 /* CentreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentreApp.swift; sourceTree = "<group>"; };
-		14F32C30295FBA0700EC1916 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		14F32C32295FBA0800EC1916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14F32C35295FBA0800EC1916 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		14F32C37295FBA0800EC1916 /* Centre.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Centre.entitlements; sourceTree = "<group>"; };
+		14F32C40295FBEA600EC1916 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		14F32C42295FE11A00EC1916 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F32C3F295FBDCF00EC1916 /* HotKey in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,11 +62,15 @@
 		14F32C2D295FBA0700EC1916 /* Centre */ = {
 			isa = PBXGroup;
 			children = (
-				14F32C2E295FBA0700EC1916 /* CentreApp.swift */,
-				14F32C30295FBA0700EC1916 /* ContentView.swift */,
+				14F32C42295FE11A00EC1916 /* AlertController.swift */,
 				14F32C32295FBA0800EC1916 /* Assets.xcassets */,
 				14F32C37295FBA0800EC1916 /* Centre.entitlements */,
+				14F32C2E295FBA0700EC1916 /* CentreApp.swift */,
+				14CE900A2970403300ED0323 /* LaunchOnLogin.swift */,
+				14CE90082970357100ED0323 /* NSSoundExt.swift */,
 				14F32C34295FBA0800EC1916 /* Preview Content */,
+				14B23A3129756D76003DD54A /* UserDefaultsExt.swift */,
+				14F32C40295FBEA600EC1916 /* WindowController.swift */,
 			);
 			path = Centre;
 			sourceTree = "<group>";
@@ -85,6 +99,9 @@
 			dependencies = (
 			);
 			name = Centre;
+			packageProductDependencies = (
+				14F32C3E295FBDCF00EC1916 /* HotKey */,
+			);
 			productName = Centre;
 			productReference = 14F32C2B295FBA0700EC1916 /* Centre.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +130,9 @@
 				Base,
 			);
 			mainGroup = 14F32C22295FBA0700EC1916;
+			packageReferences = (
+				14F32C3D295FBDCF00EC1916 /* XCRemoteSwiftPackageReference "HotKey" */,
+			);
 			productRefGroup = 14F32C2C295FBA0700EC1916 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14F32C31295FBA0700EC1916 /* ContentView.swift in Sources */,
+				14F32C43295FE11A00EC1916 /* AlertController.swift in Sources */,
+				14CE900B2970403300ED0323 /* LaunchOnLogin.swift in Sources */,
+				14B23A3229756D76003DD54A /* UserDefaultsExt.swift in Sources */,
+				14F32C41295FBEA600EC1916 /* WindowController.swift in Sources */,
 				14F32C2F295FBA0700EC1916 /* CentreApp.swift in Sources */,
+				14CE90092970357100ED0323 /* NSSoundExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +290,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Centre/Centre.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -274,13 +299,17 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Centre;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.davidspry.Centre;
+				PRODUCT_BUNDLE_IDENTIFIER = so.sqr.centre;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -293,6 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Centre/Centre.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -301,13 +331,17 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Centre;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.davidspry.Centre;
+				PRODUCT_BUNDLE_IDENTIFIER = so.sqr.centre;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -336,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		14F32C3D295FBDCF00EC1916 /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		14F32C3E295FBDCF00EC1916 /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14F32C3D295FBDCF00EC1916 /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 14F32C23295FBA0700EC1916 /* Project object */;
 }
